@@ -1,0 +1,13 @@
+version=5.2.5
+source=(https://fossies.org/linux/misc/xz-$version.tar.xz)
+
+build()
+{
+cd xz-$version
+
+./configure --prefix=/tools
+
+make
+
+make install
+}

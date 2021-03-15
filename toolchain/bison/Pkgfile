@@ -1,0 +1,13 @@
+version=3.7.5
+source=(https://mirrors.aliyun.com/gnu/bison/bison-$version.tar.xz)
+
+build()
+{
+cd bison-$version
+
+./configure --prefix=/tools
+
+make
+
+make install
+}
